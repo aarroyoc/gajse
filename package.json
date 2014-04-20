@@ -1,0 +1,25 @@
+{
+  "name": "gajse",
+  "version": "0.0.1",
+  "description": "GAJSE - Graphic Adventure JavaScript Engine",
+  "main": "./lib/gajse",
+  "scripts": {
+    "test": "echo \"TESTING GAJSE\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdrianArroyoCalle/gajse"
+  },
+  "keywords": [
+    "graphic",
+    "adventure",
+    "3d",
+    "maker",
+    "engine"
+  ],
+  "author": "Adrián Arroyo Calle",
+  "license": "Affero GPL or Commercial",
+  "bugs": {
+    "url": "https://github.com/AdrianArroyoCalle/gajse/issues"
+  }
+}
