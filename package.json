@@ -1,8 +1,8 @@
 {
   "name": "gajse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
-  "main": "./lib/gajse",
+  "main": "gajse.min.js",
   "scripts": {
     "test": "echo \"TESTING GAJSE\""
   },
@@ -21,5 +21,8 @@
   "license": "Affero GPL or Commercial",
   "bugs": {
     "url": "https://github.com/AdrianArroyoCalle/gajse/issues"
+  },
+  "dependencies": {
+    "three": "~0.66.2"
   }
 }
