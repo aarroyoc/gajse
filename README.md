@@ -35,7 +35,20 @@ At your option use uglify-js.
 
 ##Tutorial
 
-Create an index.html on a folder. 
+Create an index.html on a new folder. Put this:
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="node_modules/gajse/gajse.min.js"></script>
+	</head>
+	<body>
+		<article id="gajse" data-gajse="game/mygame.json"></article>
+	</body>
+</html>
+```
+Where mygame.json is a file containing the main description of the game such as name, description, loading image, features, mininum GAJSE version and paths for resources. It's more explained on the Wiki, or you can use La Maquinaria de Videojuegos to create the game with GUI.
 
 ##Price
 GAJSE is under the Affero GPL license so:
