@@ -1,6 +1,6 @@
 {
   "name": "gajse",
-  "version": "0.0.2",
+  "version": "0.0.3.1",
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
   "main": "gajse.min.js",
   "scripts": {

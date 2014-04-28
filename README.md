@@ -27,7 +27,7 @@ npm install
 
 npm -g install browserify (may require sudo)
 
-browserify gajse.js > gajse.min.js
+browserify -r ./lib/gajse-api.js -r three gajse.js > gajse.min.js
 
 ```
 
