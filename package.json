@@ -4,7 +4,7 @@
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
   "main": "gajse.min.js",
   "scripts": {
-    "test": "echo \"TESTING GAJSE\""
+    "test": "browserify -r ./lib/gajse-api -r three > gajse.test.js"
   },
   "repository": {
     "type": "git",
