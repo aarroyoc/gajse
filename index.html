@@ -46,15 +46,36 @@
 <h2>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
-<p>GAJSE is a library for create graphic adventures in a GrimE like style that runs on your browser. It runs on all modern browsers and it has a lot of features. </p>
+<p>GAJSE is a JavaScript library used to create graphic adventures in a real 3D environment that runs on your browser. It runs on all modern browsers and it has a lot of features. </p>
 
 <h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Resource system with cache</li>
+<li>Easy to learn API</li>
+<li>Complete, real 3D engine thanks to Three.js</li>
+<li>Load JSON, Collada and OBJ models via Three.js</li>
+<li>Translations API (via i18next)</li>
+<li>Positional audio</li>
+<li>Integrated collision engine</li>
+<li>Cutscenes API</li>
+<li>Simple conversation format</li>
+<li>Custom HUD in SVG</li>
+<li>Items API</li>
+<li>Characters API</li>
+<li>Integration with node</li>
+<li>Text-2-Speech availible with meSpeak</li>
+<li>Support for keyboard input, mouse input and touch input</li>
+</ul><h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>GAJSE is availible on npm. Do the following for use it on a project.</p>
 
 <pre><code>npm install gajse --save
 </code></pre>
+
+<p>Or you can just download the <em>gajse.min.js</em> file here.</p>
 
 <h2>
 <a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
@@ -67,8 +88,6 @@ cd gajse
 
 npm install
 
-npm -g install browserify (may require sudo)
-
 browserify -r ./lib/gajse-api.js -r three gajse.js &gt; gajse.min.js
 
 </code></pre>
@@ -78,20 +97,15 @@ browserify -r ./lib/gajse-api.js -r three gajse.js &gt; gajse.min.js
 <h2>
 <a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h2>
 
-<p>Create an index.html on a new folder. Put this:</p>
+<p>GAJSE has an official tutorial availible from here or you can use La Maquinaria de Videojuegos which offers a GUI system to create GAJSE games:</p>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;script src="node_modules/gajse/gajse.min.js"&gt;&lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;article id="gajse" data-gajse="game/mygame.json"&gt;&lt;/article&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<ul>
+<li><a href="http://github.com/AdrianArroyoCalle/gajse/wiki/Tutorial-1">Official tutorial</a></li>
+<li><a href="http://lamaquinariadevideouegos-divel.rhcloud.com">La Maquinaria de Videojuegos</a></li>
+</ul><h2>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
 
-<p>Where mygame.json is a file containing the main description of the game such as name, description, loading image, features, mininum GAJSE version and paths for resources. It's more explained on the Wiki, or you can use La Maquinaria de Videojuegos to create the game with GUI.</p>
+<p>We haven't got any screenshot yet. Please, be patient.</p>
 
 <h2>
 <a name="price" class="anchor" href="#price"><span class="octicon octicon-link"></span></a>Price</h2>
@@ -108,7 +122,8 @@ browserify -r ./lib/gajse-api.js -r three gajse.js &gt; gajse.min.js
 
 <ul>
 <li>You pay for a Commercial License of GAJSE the only price of 50$</li>
-<li>You can do whatever you want</li>
+<li>You can do whatever you want
+*</li>
 </ul>
       </section>
 
