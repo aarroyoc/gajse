@@ -4,7 +4,25 @@ GAJSE
 Graphic Adventure JavaScript Engine
 
 ##Introduction
-GAJSE is a library for create graphic adventures in a GrimE like style that runs on your browser. It runs on all modern browsers and it has a lot of features. 
+GAJSE is a JavaScript library used to create graphic adventures in a real 3D environment that runs on your browser. It runs on all modern browsers and it has a lot of features. 
+
+##Features
+
+ * Resource system with cache
+ * Easy to learn API
+ * Complete, real 3D engine thanks to Three.js
+ * Load JSON, Collada and OBJ models via Three.js
+ * Translations API (via i18next)
+ * Positional audio
+ * Integrated collision engine
+ * Cutscenes API
+ * Simple conversation format
+ * Custom HUD in SVG
+ * Items API
+ * Characters API
+ * Integration with node
+ * Text-2-Speech availible with meSpeak
+ * Support for keyboard input, mouse input and touch input
 
 ##Installation
 GAJSE is availible on npm. Do the following for use it on a project.
@@ -13,6 +31,7 @@ GAJSE is availible on npm. Do the following for use it on a project.
 npm install gajse --save
 ```
 
+Or you can just download the _gajse.min.js_ file here.
 
 ##Building
 
@@ -25,8 +44,6 @@ cd gajse
 
 npm install
 
-npm -g install browserify (may require sudo)
-
 browserify -r ./lib/gajse-api.js -r three gajse.js > gajse.min.js
 
 ```
@@ -35,20 +52,14 @@ At your option use uglify-js.
 
 ##Tutorial
 
-Create an index.html on a new folder. Put this:
+GAJSE has an official tutorial availible from here or you can use La Maquinaria de Videojuegos which offers a GUI system to create GAJSE games:
 
-```
-<!DOCTYPE html>
-<html>
-	<head>
-		<script src="node_modules/gajse/gajse.min.js"></script>
-	</head>
-	<body>
-		<article id="gajse" data-gajse="game/mygame.json"></article>
-	</body>
-</html>
-```
-Where mygame.json is a file containing the main description of the game such as name, description, loading image, features, mininum GAJSE version and paths for resources. It's more explained on the Wiki, or you can use La Maquinaria de Videojuegos to create the game with GUI.
+ * [Official tutorial](http://github.com/AdrianArroyoCalle/gajse/wiki/Tutorial-1)
+ * [La Maquinaria de Videojuegos](http://lamaquinariadevideouegos-divel.rhcloud.com)
+
+##Screenshots
+
+We haven't got any screenshot yet. Please, be patient.
 
 ##Price
 GAJSE is under the Affero GPL license so:
@@ -63,3 +74,4 @@ But if you need full control of the library, GAJSE offers a Commercial Release:
 
  * You pay for a Commercial License of GAJSE the only price of 50$
  * You can do whatever you want
+ *
