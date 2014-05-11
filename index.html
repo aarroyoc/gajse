@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gajse by AdrianArroyoCalle</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/AdrianArroyoCalle/gajse">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/AdrianArroyoCalle/gajse/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/AdrianArroyoCalle/gajse/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Gajse</h1>
+          <p>Graphic Adventure JavaScript Engine</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/AdrianArroyoCalle">AdrianArroyoCalle</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="gajse" class="anchor" href="#gajse"><span class="octicon octicon-link"></span></a>GAJSE</h1>
+
+<p>Graphic Adventure JavaScript Engine</p>
+
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>GAJSE is a library for create graphic adventures in a GrimE like style that runs on your browser. It runs on all modern browsers and it has a lot of features. </p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>GAJSE is availible on npm. Do the following for use it on a project.</p>
+
+<pre><code>npm install gajse --save
+</code></pre>
+
+<h2>
+<a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
+
+<p>You can manually build gajse:</p>
+
+<pre><code>git clone https://github.com/AdrianArroyoCalle/gajse
+
+cd gajse
+
+npm install
+
+npm -g install browserify (may require sudo)
+
+browserify -r ./lib/gajse-api.js -r three gajse.js &gt; gajse.min.js
+
+</code></pre>
+
+<p>At your option use uglify-js.</p>
+
+<h2>
+<a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h2>
+
+<p>Create an index.html on a new folder. Put this:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="node_modules/gajse/gajse.min.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;article id="gajse" data-gajse="game/mygame.json"&gt;&lt;/article&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Where mygame.json is a file containing the main description of the game such as name, description, loading image, features, mininum GAJSE version and paths for resources. It's more explained on the Wiki, or you can use La Maquinaria de Videojuegos to create the game with GUI.</p>
+
+<h2>
+<a name="price" class="anchor" href="#price"><span class="octicon octicon-link"></span></a>Price</h2>
+
+<p>GAJSE is under the Affero GPL license so:</p>
+
+<ul>
+<li>You can use it for open source projects</li>
+<li>You should give us credit</li>
+<li>You can use it on hosted servers, but you need the full source</li>
+<li>You announce the changes made by you</li>
+<li>You can use it on commercial projects</li>
+</ul><p>But if you need full control of the library, GAJSE offers a Commercial Release:</p>
+
+<ul>
+<li>You pay for a Commercial License of GAJSE the only price of 50$</li>
+<li>You can do whatever you want</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
