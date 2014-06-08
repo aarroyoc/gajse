@@ -1,6 +1,6 @@
 {
   "name": "gajse",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
   "main": "gajse.min.js",
   "scripts": {
@@ -27,8 +27,8 @@
     "mespeak": "~1.4.4-c"
   },
   "devDependencies": {
-    "browserify": "~3.44.2",
+    "browserify": "~4.1.8",
     "jsdoc": "~3.3.0-alpha5",
-    "mocha": "~1.18.2"
+    "mocha": "~1.20.1"
   }
 }
