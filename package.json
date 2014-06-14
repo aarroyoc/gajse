@@ -2,8 +2,10 @@
   "name": "gajse",
   "version": "0.0.5",
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
-  "main": "gajse.min.js",
+  "main": "gajse.js",
   "scripts": {
+	"preinstall" : "echo Welcome to GAJSE",
+	"install" : "echo Installing GAJSE",
     "test": "browserify -r ./lib/gajse-api -r three > gajse.test.js"
   },
   "repository": {
