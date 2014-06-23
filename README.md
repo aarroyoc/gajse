@@ -44,7 +44,7 @@ cd gajse
 
 npm install
 
-browserify -r ./lib/gajse-api.js -r three gajse.js > gajse.min.js
+grunt
 
 ```
 
@@ -55,7 +55,7 @@ At your option use uglify-js.
 GAJSE has an official tutorial availible from here or you can use La Maquinaria de Videojuegos which offers a GUI system to create GAJSE games:
 
  * [Official tutorial](http://github.com/AdrianArroyoCalle/gajse/wiki/Tutorial-1)
- * [La Maquinaria de Videojuegos](http://lamaquinariadevideouegos-divel.rhcloud.com)
+ * [La Maquinaria de Videojuegos](http://lamaquinariadevideojuegos-divel.rhcloud.com)
 
 ##Screenshots
 
