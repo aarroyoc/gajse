@@ -1,0 +1,11 @@
+{
+  "name" : "GAJSE",
+  "description" : "GAJSE is a JavaScript library that allows you to create Graphic Adventures",
+  "version" : "0.0.5",
+  "url" : "http://adrianarroyocalle.github.io/gajse",
+  "logo" : "gajse.svg",
+  "options" : {
+    "linkNatives" : "true",
+    "outdir" : "docs"
+  }
+}
