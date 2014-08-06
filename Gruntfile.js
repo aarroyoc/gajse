@@ -9,7 +9,7 @@ module.exports=function(grunt){
 				options: {
 					require: ["three","./lib/gajse-api"]
 				}
-			} 
+			}
 		},
 		uglify: {
 			options: {
@@ -20,25 +20,31 @@ module.exports=function(grunt){
 				dest: "gajse.ugly.js"
 			}
 		},
-		jsdoc: {
-			dist: {
-				src: "lib/*.js",
+		yuidoc: {
+			compile:{
+				name: "GAJSE",
+				description: "GAJSE is a JavaScript library for support 3D graphic adventures",
+				version: "<%= pkg.version %>",
+				url: "http://adrianarroyocalle.github.io/gajse",
+				logo: "./gajse.svg",
 				options: {
-					destination: "doc"
+					paths: ["lib"],
+					//themedir,
+					outdir: "doc"
 				}
 			}
 		}
 	});
-	
+
 	grunt.loadNpmTasks("grunt-browserify");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
-	grunt.loadNpmTasks("grunt-jsdoc");
-	
+	grunt.loadNpmTasks("grunt-contrib-yuidoc");
+
 	grunt.registerTask("default",["browserify"]);
-	grunt.registerTask("release",["browserify","uglify","jsdoc"]);
-	grunt.registerTask("test",["browserify","uglify","jsdoc"]);
-	
-	
-	
-	
+	grunt.registerTask("release",["browserify","uglify"]);
+	grunt.registerTask("test",["browserify","uglify"]);
+
+
+
+
 }
