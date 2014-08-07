@@ -42,7 +42,7 @@ module.exports=function(grunt){
 
 	grunt.registerTask("default",["browserify"]);
 	grunt.registerTask("release",["browserify","uglify"]);
-	grunt.registerTask("test",["browserify","uglify"]);
+	grunt.registerTask("test",["browserify"]);
 
 
 
