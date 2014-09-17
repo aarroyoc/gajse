@@ -1,10 +1,17 @@
 language: node_js
 os:
- - linux
- - osx
+- linux
+- osx
 before_install:
- - "npm install -g grunt-cli"
+- npm install -g grunt-cli
 node_js:
- - "0.11"
- - "0.10"
- 
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: adrian.arroyocalle@gmail.com
+  api_key:
+    secure: E4qwjqfZu0Np780KOgMII68PMZTBTr/WZZn0FWqUBYXao1RurSkEvvA6oif3ppXgZnqiecEQSwHnqytUTNuOkFJrFSMF52Z3qkSZ8CHnpFxqwPdm8MFznAnshutVlb3e0lHWHh9w8FXWJzqFcOJz5akt7ib2fHz3MshZNpyfbbA=
+  on:
+    tags: true
+    repo: AdrianArroyoCalle/gajse
