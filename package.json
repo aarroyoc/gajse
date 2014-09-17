@@ -1,9 +1,9 @@
 {
   "name": "gajse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
   "main": "gajse.js",
-  "homepage" : "http://adrianarroyocalle.github.io/gajse",
+  "homepage": "http://adrianarroyocalle.github.io/gajse",
   "scripts": {
     "preinstall": "echo Welcome to GAJSE",
     "install": "echo Installing GAJSE",
@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "three": "~0.68.0",
-    "mespeak": "~1.4.4-c"
+    "mespeak": "~1.4.4-c",
+    "node-promise": "~0.5.10"
   },
   "devDependencies": {
     "browserify": "~5.9.1",
