@@ -1,6 +1,6 @@
 {
   "name": "gajse",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "GAJSE - Graphic Adventure JavaScript Engine",
   "main": "gajse.js",
   "homepage": "http://adrianarroyocalle.github.io/gajse",
@@ -36,6 +36,7 @@
     "grunt": "~0.4.5",
     "grunt-browserify": "~2.1.4",
     "grunt-contrib-uglify": "~0.5.1",
-    "grunt-contrib-yuidoc": "~0.5.2"
+    "grunt-contrib-yuidoc": "~0.5.2",
+    "grunt-release-it": "~0.2.0"
   }
 }

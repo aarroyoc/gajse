@@ -33,15 +33,24 @@ module.exports=function(grunt){
 					outdir: "doc"
 				}
 			}
+		},
+		"release-it" : {
+			options: {
+				pkgFiles: ["package.json"],
+				commitMessage: "Release %s",
+				tagName: "%s",
+				tagAnnotation: "Release %s"
+			}
 		}
 	});
 
 	grunt.loadNpmTasks("grunt-browserify");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-yuidoc");
+	grunt.loadNpmTasks("grunt-release-it");
 
 	grunt.registerTask("default",["browserify"]);
-	grunt.registerTask("release",["browserify","uglify"]);
+	grunt.registerTask("release",["browserify"]);
 	grunt.registerTask("test",["browserify"]);
 
 
