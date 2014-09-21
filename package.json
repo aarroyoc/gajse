@@ -20,8 +20,12 @@
     "maker",
     "engine"
   ],
-  "author": "Adrián Arroyo Calle",
-  "license": "Affero GPL or Commercial",
+  "author": {
+	"name" : "Adrián Arroyo Calle",
+	"email" : "adrian.arroyocalle@gmail.com",
+	"url" : "http://adrianarroyocalle.github.io"
+  },
+  "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/AdrianArroyoCalle/gajse/issues"
   },
