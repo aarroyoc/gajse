@@ -7,6 +7,7 @@ before_install:
 node_js:
 - '0.11'
 - '0.10'
+- iojs
 deploy:
   provider: npm
   email: adrian.arroyocalle@gmail.com
